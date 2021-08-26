@@ -3,6 +3,7 @@
 #include <sstream>
 #include <string>
 #include <cmath>
+#include <vector>
 
 using namespace std;
 
@@ -43,6 +44,13 @@ public:
      */
     string getType();
 
+    /**
+     * Turns a string to a vector.
+     * @param str const std::string &
+     * @param identifier const char
+     * @return std::vector<string>.
+     */
+    static std::vector<string> strToVector(const std::string &str, const char identifier);
 };
 
 #endif //UNTITLED_IRIS_H};

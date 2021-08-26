@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+#include <vector>
 
 using std::cerr;
 using std::cout;
@@ -28,4 +29,16 @@ double Iris::getDistance(Iris other) {
 
 string Iris::getType() {
     return this->type;
+}
+
+std::vector<string> Iris::strToVector(const std::string &str, const char identifier) {
+    std::stringstream ss(str);
+    std::string theString;
+
+    std::vector<std::string> output;
+    while (std::getline(ss, theString, identifier)) {
+        output.push_back(theString);
+    }
+
+    return output;
 }
