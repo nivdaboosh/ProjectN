@@ -13,10 +13,12 @@ the file of the unclassified irises and the file of the output.
 For our port we chose 55755 for TCP and 55756 for UDP and for our buffer size we chose 4096.
 
 For our implementaion we made classes for UDP and TCP, clients and servers, and we made 2 mains - one for the server and one for the client. 
-The mains controls our project and writes the KNN-input to the file.
+The mains control our project and writes the KNN-input to the file.
 
-We implemented the files classified and unclassified.
+We implemented the files classified, Unclassified (the unclassified file that we got) and output (the output when using unclassified).
 
-Clone the git and download the implemented files and classes to your computer. We already determined in the code the files that it gets (as classified and unclassified) and the k (as 5) but it can be changed easily. Run the main class and get the output.txt file (we already implemented it for classified and unclassified).
+Clone the git and download the implemented directories (server and client) and classes (Iris.cpp and Iris.h) to your computer.
+You should have the CMakeLists file as ours (we implemented it for help).
+We already determined in the code the classified file that it gets (as classified) and the k (as 5) but it can be changed easily.
 
 Good luck !
